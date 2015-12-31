@@ -23,20 +23,19 @@
         <div layout="column" class="md-toolbar-tools-bottom inset">
           <user-avatar></user-avatar>
           <span></span>
-          <div>Firstname Lastname</div>
-          <div>email@domainname.com</div>
+          <div>Yunik</div>
         </div>
       </md-toolbar>
       <md-list>
       <md-item ng-repeat="item in menu">
-        <a>
-          <md-item-content md-ink-ripple layout="row" layout-align="start center">
+        <a ng-href="{{item.link}}" target="_blank">
+          <md-list-item  md-ink-ripple layout="row" layout-align="start center">
             <div class="inset">
               <ng-md-icon icon="{{item.icon}}"></ng-md-icon>
             </div>
             <div class="inset">{{item.title}}
             </div>
-          </md-item-content>
+          </md-list-item>
         </a>
       </md-item>
       <md-divider></md-divider>
@@ -214,6 +213,8 @@
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-material/angular-material.js"></script>
     <script src="bower_components/angular-material-icons/angular-material-icons.min.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/angularfire/dist/angularfire.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -221,6 +222,8 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/client.js"></script>
+        <script src="scripts/controllers/app.js"></script>
         <!-- endbuild -->
 </body>
 </html>
